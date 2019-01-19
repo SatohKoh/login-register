@@ -42,10 +42,10 @@
             </objects>
             <point key="canvasLocation" x="1043.4782608695652" y="132.88043478260872"/>
         </scene>
-        <!--View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="tan-If-L0y">
             <objects>
-                <viewController id="i0M-U2-3bZ" sceneMemberID="viewController">
+                <viewController id="i0M-U2-3bZ" customClass="LoginViewController" customModule="UserLoginAndRegistration" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Rqr-Q4-EhO">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -88,6 +88,9 @@
                                 </constraints>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="Login"/>
+                                <connections>
+                                    <action selector="loginButtonTapped:" destination="i0M-U2-3bZ" eventType="touchUpInside" id="Nw7-20-0GR"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YtA-Mr-Yrb">
                                 <rect key="frame" x="127" y="400" width="121" height="30"/>
@@ -124,6 +127,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Qvy-Fv-QIh"/>
                     </view>
+                    <connections>
+                        <outlet property="userEmailTextField" destination="aqT-hA-4zD" id="ZeC-uv-F6b"/>
+                        <outlet property="userPasswordTextField" destination="ogK-m0-77H" id="aDq-1q-NHb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cRV-At-nI6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

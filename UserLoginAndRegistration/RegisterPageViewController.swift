@@ -39,7 +39,7 @@ class RegisterPageViewController: UIViewController {
         }
         
         // データ登録
-        UserDefaults.standard.set(userEmail, forKey:"userName")
+        UserDefaults.standard.set(userEmail, forKey:"userEmail")
         UserDefaults.standard.set(userPassword, forKey:"userPassword")
         //UserDefaults.standard.synchronize();
         
